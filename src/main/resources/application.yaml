@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    #Setup all the environment variables indicated within ${} in the AWS Beanstalk instance configuration as well.
+    url: ${JDBC_URL:jdbc:postgresql://eventzy-dev.ccooilygynrj.ap-south-1.rds.amazonaws.com:5432/eventzy}
+    username : ${POSTGRES_USERNAME:eventzy001_sa}
+    password : ${POSTGRES_PASSWORD:thistooshallpass001}
+    driverClassName: org.postgresql.Driver
+
